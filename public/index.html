@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- include our dependency on angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>User Avatar Template</title>
+</head>
+<body>
+    <header>
+        <h1>Enter Your Name and Photo!</h1>
+        <p>We'll change your name to Turd Ferguson.</p>
+    </header>
+    
+  <div ng-app='app' ng-controller='mainCtrl' id="yeah"> 
+    <form name='userForm' ng-submit='addNew(userForm)'> 
+      <input placeholder='Name' ng-model='userForm.name'/> 
+      <input placeholder='Image Url' ng-model='userForm.url'/>
+      <button type='submit'>Add New</button>
+    </form>
+    
+    <ul class='User-list'>
+      <li ng-repeat='user in users'>
+        <avatar user='user' />
+      </li>
+    </ul>
+  </div>
+  
+</body>
+</html>

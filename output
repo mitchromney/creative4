@@ -1,0 +1,4 @@
+nohup: ignoring input
+[0mGET /? [32m200 [0m9.002 ms - 925[0m
+[0mGET /stylesheets/style.css [32m200 [0m3.138 ms - 1022[0m
+[0mGET /scripts.js [32m200 [0m4.752 ms - 1537[0m
